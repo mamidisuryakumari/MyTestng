@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test" enabled="false">
+    <classes>
+      <class name="testing.OrangeHRM">
+		<methods>
+			<include name="launchApp"/>
+			<include name="enterLoginDetails"/>
+		</methods>
+		</class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test1">
+    <classes>
+      <class name="testing.TestCase">
+		<methods>
+			<include name="testCaseGoogle"/>
+		</methods>
+		</class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
