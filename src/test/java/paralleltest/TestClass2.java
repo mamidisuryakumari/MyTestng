@@ -20,6 +20,9 @@ public class TestClass2 {
 		System.out.println("TestClass2 >> testMethod6 >> " +Thread.currentThread().threadId());
 	}
     
+	public void parallelTestMethod12() {
+		System.out.println("TestClass2 >> testMethod12 >> " +Thread.currentThread().threadId());
+	}
 }
 
 
