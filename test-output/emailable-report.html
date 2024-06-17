@@ -8,23 +8,44 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">73</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">66</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">10</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">139</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,865</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">paralleltest.TestClass1</td><td><a href="#m0">parallelTestMethod1</a></td><td rowspan="1">1718532276777</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m1">parallelTestMethod2</a></td><td rowspan="1">1718532276791</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m2">parallelTestMethod3</a></td><td rowspan="1">1718532276796</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="3">paralleltest.TestClass2</td><td><a href="#m3">parallelTestMethod4</a></td><td rowspan="1">1718532276802</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m4">parallelTestMethod5</a></td><td rowspan="1">1718532276808</td><td rowspan="1">4</td></tr><tr class="passedodd"><td><a href="#m5">parallelTestMethod6</a></td><td rowspan="1">1718532276816</td><td rowspan="1">2</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">paralleltest.TestClass3</td><td><a href="#m6">testMethod10</a></td><td rowspan="1">1718532276777</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m7">testMethod7</a></td><td rowspan="1">1718532276792</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m8">testMethod8</a></td><td rowspan="1">1718532276797</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m9">testMethod9</a></td><td rowspan="1">1718532276803</td><td rowspan="1">3</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">screenshot.TestClass</td><td><a href="#m0">TestGoogle</a></td><td rowspan="1">1718616824417</td><td rowspan="1">2697</td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">paralleltest.TestClass1#parallelTestMethod1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">paralleltest.TestClass1#parallelTestMethod2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">paralleltest.TestClass1#parallelTestMethod3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">paralleltest.TestClass2#parallelTestMethod4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">paralleltest.TestClass2#parallelTestMethod5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">paralleltest.TestClass2#parallelTestMethod6</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test2</h2><h3 id="m6">paralleltest.TestClass3#testMethod10</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">paralleltest.TestClass3#testMethod7</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">paralleltest.TestClass3#testMethod8</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">paralleltest.TestClass3#testMethod9</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">screenshot.TestClass#TestGoogle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Title is mismatched expected [HYR Tutorials - Google Searchbb] but found [HYR Tutorials - Google Search]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at screenshot.TestClass.TestGoogle(TestClass.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

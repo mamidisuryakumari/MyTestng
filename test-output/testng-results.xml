@@ -1,59 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-16T15:34:36 IST" name="Suite" finished-at="2024-06-16T15:34:36 IST" duration-ms="73">
+  <suite started-at="2024-06-17T15:03:41 IST" name="Default suite" finished-at="2024-06-17T15:03:47 IST" duration-ms="5865">
     <groups>
     </groups>
-    <test started-at="2024-06-16T15:34:36 IST" name="Test1" finished-at="2024-06-16T15:34:36 IST" duration-ms="73">
-      <class name="paralleltest.TestClass1">
-        <test-method signature="parallelTestMethod1()[pri:0, instance:paralleltest.TestClass1@3023df74]" started-at="2024-06-16T15:34:36 IST" name="parallelTestMethod1" finished-at="2024-06-16T15:34:36 IST" duration-ms="10" status="PASS">
+    <test started-at="2024-06-17T15:03:41 IST" name="Default test" finished-at="2024-06-17T15:03:47 IST" duration-ms="5865">
+      <class name="screenshot.TestClass">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:screenshot.TestClass@3c41ed1d]" started-at="2024-06-17T15:03:41 IST" name="driverInitialization" finished-at="2024-06-17T15:03:44 IST" duration-ms="2865" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- parallelTestMethod1 -->
-        <test-method signature="parallelTestMethod2()[pri:0, instance:paralleltest.TestClass1@3023df74]" started-at="2024-06-16T15:34:36 IST" name="parallelTestMethod2" finished-at="2024-06-16T15:34:36 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- driverInitialization -->
+        <test-method signature="TestGoogle()[pri:0, instance:screenshot.TestClass@3c41ed1d]" started-at="2024-06-17T15:03:44 IST" name="TestGoogle" finished-at="2024-06-17T15:03:47 IST" duration-ms="2697" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title is mismatched expected [HYR Tutorials - Google Searchbb] but found [HYR Tutorials - Google Search]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title is mismatched expected [HYR Tutorials - Google Searchbb] but found [HYR Tutorials - Google Search]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at screenshot.TestClass.TestGoogle(TestClass.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- parallelTestMethod2 -->
-        <test-method signature="parallelTestMethod3()[pri:0, instance:paralleltest.TestClass1@3023df74]" started-at="2024-06-16T15:34:36 IST" name="parallelTestMethod3" finished-at="2024-06-16T15:34:36 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- TestGoogle -->
+        <test-method is-config="true" signature="close()[pri:0, instance:screenshot.TestClass@3c41ed1d]" started-at="2024-06-17T15:03:47 IST" name="close" finished-at="2024-06-17T15:03:47 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- parallelTestMethod3 -->
-      </class> <!-- paralleltest.TestClass1 -->
-      <class name="paralleltest.TestClass2">
-        <test-method signature="parallelTestMethod4()[pri:0, instance:paralleltest.TestClass2@459e9125]" started-at="2024-06-16T15:34:36 IST" name="parallelTestMethod4" finished-at="2024-06-16T15:34:36 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- parallelTestMethod4 -->
-        <test-method signature="parallelTestMethod5()[pri:0, instance:paralleltest.TestClass2@459e9125]" started-at="2024-06-16T15:34:36 IST" name="parallelTestMethod5" finished-at="2024-06-16T15:34:36 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- parallelTestMethod5 -->
-        <test-method signature="parallelTestMethod6()[pri:0, instance:paralleltest.TestClass2@459e9125]" started-at="2024-06-16T15:34:36 IST" name="parallelTestMethod6" finished-at="2024-06-16T15:34:36 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- parallelTestMethod6 -->
-      </class> <!-- paralleltest.TestClass2 -->
-    </test> <!-- Test1 -->
-    <test started-at="2024-06-16T15:34:36 IST" name="Test2" finished-at="2024-06-16T15:34:36 IST" duration-ms="66">
-      <class name="paralleltest.TestClass3">
-        <test-method signature="testMethod10()[pri:0, instance:paralleltest.TestClass3@f5958c9]" started-at="2024-06-16T15:34:36 IST" name="testMethod10" finished-at="2024-06-16T15:34:36 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod10 -->
-        <test-method signature="testMethod7()[pri:0, instance:paralleltest.TestClass3@f5958c9]" started-at="2024-06-16T15:34:36 IST" name="testMethod7" finished-at="2024-06-16T15:34:36 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod7 -->
-        <test-method signature="testMethod8()[pri:0, instance:paralleltest.TestClass3@f5958c9]" started-at="2024-06-16T15:34:36 IST" name="testMethod8" finished-at="2024-06-16T15:34:36 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod8 -->
-        <test-method signature="testMethod9()[pri:0, instance:paralleltest.TestClass3@f5958c9]" started-at="2024-06-16T15:34:36 IST" name="testMethod9" finished-at="2024-06-16T15:34:36 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod9 -->
-      </class> <!-- paralleltest.TestClass3 -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- close -->
+      </class> <!-- screenshot.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
